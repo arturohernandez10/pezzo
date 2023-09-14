@@ -106,6 +106,18 @@ services:
       - "6379:6379"
 
 volumes:
+  postgres_data:
+    driver_opts:
+      type: none
+      device: /datadrive/postgres_data
+      o: bind
+  opensearch-data1:
+    driver_opts:
+      type: none
+      device: /datadrive/opensearch-data1
+      o: bind
+
+volumes:
   postgres_data: ~
   opensearch-data1:
 
