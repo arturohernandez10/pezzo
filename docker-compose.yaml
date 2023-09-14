@@ -26,7 +26,7 @@ services:
       POSTGRES_CONNECTION_URI: postgres://postgres:postgres@postgres:5432/supertokens
 
   pezzo-server:
-    image: ghcr.io/pezzolabs/pezzo/server:latest
+    image: ghcr.io/arturohernandez10/pezzo/server:latest
     restart: always
     env_file:
       - ./.env
@@ -47,7 +47,7 @@ services:
       retries: 3
 
   pezzo-console:
-    image: ghcr.io/pezzolabs/pezzo/console:latest
+    image: ghcr.io/arturohernandez10/pezzo/console:latest
     restart: always
     env_file:
       - ./.env
